@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Charity Quiz</string>
+    <string name="action_settings">Settings</string>
+    <string name="logokwf">KWF Logo</string>
+    <string name="good">Goed!</string>
+    <string name="exampleExplanation">Kanker is nu doodsoorzaak nummer 1. Steun het KWF en help dit aantal naar beneden te brengen!</string>
+	<string name="nextLevel">Volgende vraag</string>
+	<string name="shareFact">Deel feit</string>
+	<string name="gameOver">Game Over</string>
+	<string name="rightAnswersStatic">Antwoorden goed:</string>
+	<string name="wrongAnswersStatic">Antwoorden fout:</string>
+	<string name="totalScoreStatic">Totale score:</string>
+	<string name="rightAnswers">15</string>
+	<string name="wrongAnswers">4</string>
+	<string name="totalScore">1235</string>
+	<string name="toMainMenu">Naar Hoofdmenu</string>
+	<string name="playAgain">Speel opnieuw</string>
+	<string name="soundButton">Geluid aan/uit</string>
+	<string name="heart">Leven</string>
+	<string name="currentScore">0</string>
+	<string name="fbShare">Deel op Facebook</string>
+	<string name="desc">Start</string>
+    <string name="gametitle">Charity Quiz</string>
+    <color name="white">#FFF</color>
+    <string name="startbutton">Play</string>
+    <string name="highscorebutton">High Score</string>
+    <string name="clouddiscription">cloud</string>
+    <string name="question">Hoeveel mensen lijden er in Nederland aan MS?</string>
+	<string name="a1">1 op de 500 mensen heeft MS</string>
+	<string name="a2">1 op de 1.000 mensen heeft MS</string>
+	<string name="a3">1 op de 5.000 mensen heeft MS</string>
+	<string name="a4">1 op de 10.000 mensen heeft MS</string>
+	<string name="ms1">Kind met MS</string>
+	<string name="HighscoreTitle">High Scores</string>
+    <string name="HighscoreRightText">Vragen goed beantwoord:</string>
+    <string name="HighscoreRightNumber">10</string>
+    <string name="HighscoreWrongText">Vragen fout beantwoord:</string>
+    <string name="HighscoreWrongNumber">19</string>
+    <string name="HighscoreHsText">Hoogste score:</string>
+    <string name="HighscoreHsNumber">250</string>
+    <string name="mainmenubutton">Hoofdmenu</string>
+
+</resources>

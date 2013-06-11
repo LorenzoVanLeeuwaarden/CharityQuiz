@@ -5,6 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="logokwf">KWF Logo</string>
     <string name="good">Goed!</string>
+    <string name="wrong">Fout!</string>
     <string name="exampleExplanation">Kanker is nu doodsoorzaak nummer 1. Steun het KWF en help dit aantal naar beneden te brengen!</string>
 	<string name="nextLevel">Volgende vraag</string>
 	<string name="shareFact">Deel feit</string>

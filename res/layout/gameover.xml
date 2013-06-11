@@ -15,36 +15,6 @@
    	    android:src="@drawable/soundon" 
    	    android:clickable="true"/>
     
-    <ImageView 
-        android:id="@+id/ivHeart1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/heart"
-        android:contentDescription="@string/heart"
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="5sp"
-        />
-    
-    <ImageView 
-        android:id="@+id/ivHeart2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/heart"
-        android:contentDescription="@string/heart"
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="31sp"
-        />
-    
-    <ImageView 
-        android:id="@+id/ivHeart3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/heart"
-        android:contentDescription="@string/heart"
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="57sp"
-        />
-    
     <TextView 
         android:id="@+id/tvCurrentScore"
         android:layout_width="wrap_content"

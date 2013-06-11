@@ -1,11 +1,13 @@
 package com.shuffleblab.charityquiz;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.SQLException;
 import android.graphics.Typeface;
 import android.view.Menu;
 import android.view.View;
@@ -45,6 +47,28 @@ public class MainMenu extends Activity implements View.OnClickListener {
 		setContentView(R.layout.mainmenu);
 		initialize();
 		hTimer.post(newView);
+		DatabaseHelper myDbHelper = new DatabaseHelper(null);
+		myDbHelper = new DatabaseHelper(this);
+
+		try {
+
+			myDbHelper.createDataBase();
+
+		} catch (IOException ioe) {
+
+			throw new Error("Unable to create database");
+
+		}
+
+		try {
+
+			myDbHelper.openDataBase();
+
+		} catch (SQLException sqle) {
+
+			throw sqle;
+
+		}
 	}
 
 	private void initialize() {
@@ -67,6 +91,7 @@ public class MainMenu extends Activity implements View.OnClickListener {
 		hTimer = new Handler();
 		hActive = false;
 	}
+
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) { // getID from touched view
@@ -268,7 +293,5 @@ public class MainMenu extends Activity implements View.OnClickListener {
 			e.printStackTrace();
 		}
 	}
-
-
 
 }

@@ -1,5 +1,9 @@
 package com.shuffleblab.charityquiz;
 
+import com.parse.Parse;
+import com.parse.ParseAnalytics;
+import com.parse.ParseObject;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
@@ -45,6 +49,11 @@ public class MainMenu extends Activity implements View.OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mainmenu);
+		Parse.initialize(this, "pIe5swoNGrWET6RfnDzgHss5X0cplcywMIhsnO7f", "alB72HSIufNADT7ww3dCdJWd8Mdlsag3z18Loo9x"); 
+		ParseAnalytics.trackAppOpened(getIntent());
+		ParseObject testObject = new ParseObject("TestObject");
+		testObject.put("foo", "bar");
+		testObject.saveInBackground();
 		initialize();
 		hTimer.post(newView);
 		DatabaseHelper myDbHelper = new DatabaseHelper(null);

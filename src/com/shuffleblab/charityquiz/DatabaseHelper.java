@@ -192,7 +192,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		// Make sure application picks a random row by assigning a random value.
 		Random r = new Random();
 		selectionNumber = r.nextInt(14) + 1;
-		System.out.println(selectionNumber);
 
 		String[] columns = new String[] { KEY_ROWID, KEY_QUESTION, KEY_ANSWER1,
 				KEY_ANSWER2, KEY_ANSWER3, KEY_ANSWER4, KEY_PHOTOCHARITY,

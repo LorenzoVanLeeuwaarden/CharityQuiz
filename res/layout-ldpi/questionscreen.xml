@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgr"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+<ImageView
+        android:id="@+id/ivSoundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="7dp"
+        android:clickable="true"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/soundon" />
+
+    <ImageView
+        android:id="@+id/ivHeart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/heart"
+        android:src="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/ivHeart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/heart"
+        android:src="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/ivHeart3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/heart"
+        android:src="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/tvCurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/currentScore"
+        android:textColor="@android:color/white" />
+    
+
+    <Button
+        android:id="@+id/bAnswer1"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ivQPicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/button_menu"
+        android:text="@string/a1"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/bAnswer2"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/bAnswer1"
+        android:layout_below="@+id/bAnswer1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/button_menu"
+        android:text="@string/a2"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/bAnswer3"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/bAnswer2"
+        android:layout_below="@+id/bAnswer2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/button_menu"
+        android:text="@string/a3"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/bAnswer4"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/bAnswer3"
+        android:layout_below="@+id/bAnswer3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/button_menu"
+        android:text="@string/a4"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+     <ImageButton
+        android:id="@+id/powerupButton2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/powerup2b"
+        android:contentDescription="@string/a1" />
+
+    <ImageButton
+        android:id="@+id/powerupButton3"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/ivQPicture"
+        android:layout_alignTop="@+id/powerupButton2"
+        android:background="@drawable/powerup3b"
+        android:contentDescription="@string/a1" />
+
+    <ImageButton
+        android:id="@+id/powerupButton1"
+        android:layout_width="40sp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ivQPicture"
+        android:layout_alignTop="@+id/powerupButton2"
+        android:background="@drawable/powerup1b"
+        android:contentDescription="@string/a1"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/ivQPicture"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:contentDescription="@string/ms1"
+        android:src="@drawable/ms1" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivQPicture"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/question"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

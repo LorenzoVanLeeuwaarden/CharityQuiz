@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/goededoelenquiz"
+    android:paddingBottom="25dp">
+
+    <TextView
+        android:id="@+id/tvHighscoreRightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvHighscoreTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/HighscoreRightText"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvHighscoreRightNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvHighscoreRightText"
+        android:layout_alignBottom="@+id/tvHighscoreRightText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text="@string/HighscoreRightNumber"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/tvHighscoreWrongText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvHighscoreRightText"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/HighscoreWrongText"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvHighscoreWrongNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvHighscoreWrongText"
+        android:layout_alignBottom="@+id/tvHighscoreWrongText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text="@string/HighscoreWrongNumber"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvHighscoreHsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvHighscoreHsText"
+        android:layout_alignBottom="@+id/tvHighscoreHsText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text="@string/HighscoreHsNumber"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvHighscoreHsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvHighscoreRightText"
+        android:layout_below="@+id/tvHighscoreWrongText"
+        android:layout_marginTop="40dp"
+        android:text="@string/HighscoreHsText"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bMainmenubutton"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_menu"
+            android:text="@string/mainmenubutton"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvHighscoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:gravity="center_horizontal"
+            android:text="@string/HighscoreTitle"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/bSharebutton"
+            android:layout_width="40dp"
+    	    android:layout_height="35dp"
+            android:layout_below="@+id/tvHighscoreHsText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:background="@drawable/facebookshare"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+</RelativeLayout>

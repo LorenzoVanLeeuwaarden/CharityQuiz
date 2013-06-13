@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bkgr"
+    android:paddingBottom="25dp">
+
+   <ImageView
+        android:id="@+id/ivSoundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/soundon" />
+
+       <TextView
+        android:id="@+id/tvCurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/currentScore"
+        android:textColor="@android:color/white" />
+    
+    <TextView
+        android:id="@+id/tvRightAnswersStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvWrongAnswersStatic"
+        android:layout_alignRight="@+id/tvWrongAnswersStatic"
+        android:layout_marginBottom="21dp"
+        android:text="@string/rightAnswersStatic"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvTotalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTotalScoreStatic"
+        android:layout_alignBottom="@+id/tvTotalScoreStatic"
+        android:layout_alignLeft="@+id/tvWrongAnswers"
+        android:text="@string/totalScore"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvRightAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvRightAnswersStatic"
+        android:layout_alignBottom="@+id/tvRightAnswersStatic"
+        android:layout_alignLeft="@+id/tvWrongAnswers"
+        android:text="@string/rightAnswers"
+        android:textColor="@android:color/white" />
+    
+    <Button
+    	    android:id="@+id/bPlayAgain"
+    	    android:padding="5dp"
+    	    android:layout_width="128dp"
+    	    android:layout_height="35dp"
+    	    android:layout_marginLeft="20dp"
+    	    android:layout_alignParentBottom="true"
+    	    
+    	    android:background="@drawable/menu_button"
+    	    android:text="@string/playAgain" 
+    	    android:textColor="@android:color/white"
+    	    android:textSize="14sp"/>
+
+    	<Button
+    	    android:id="@+id/bToMainMenu"
+    	    android:layout_width="128dp"
+    	    android:layout_height="35dp"
+    	    android:layout_alignTop="@+id/bPlayAgain"
+    	    android:layout_marginRight="20dp"
+    	    android:layout_alignParentRight="true"
+    	    android:background="@drawable/menu_button"
+    	    android:padding="5dp"
+    	    android:text="@string/toMainMenu" 
+    	    android:textColor="@android:color/white"
+    	    android:textSize="14sp"/>
+
+    	<TextView
+    	    android:id="@+id/tvTotalScoreStatic"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/bPlayAgain"
+    	    android:layout_alignRight="@+id/tvWrongAnswersStatic"
+    	    android:layout_marginBottom="73dp"
+    	    android:text="@string/totalScoreStatic"
+    	    android:textColor="@android:color/white" />
+
+    	<TextView
+    	    android:id="@+id/tvWrongAnswersStatic"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/tvTotalScoreStatic"
+    	    android:layout_alignLeft="@+id/ivBestLogo"
+    	    android:layout_marginBottom="18dp"
+    	    android:text="@string/wrongAnswersStatic"
+    	    android:textColor="@android:color/white" />
+
+    	<TextView
+    	    android:id="@+id/tvWrongAnswers"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignBaseline="@+id/tvWrongAnswersStatic"
+    	    android:layout_alignBottom="@+id/tvWrongAnswersStatic"
+    	    android:layout_alignRight="@+id/tvGameOver"
+    	    android:text="@string/wrongAnswers"
+    	    android:textColor="@android:color/white" />
+
+    	<ImageView
+    	    android:id="@+id/ivBestLogo"
+    	    android:layout_width="200dp"
+    	    android:layout_height="100dp"
+    	    android:layout_above="@+id/tvRightAnswersStatic"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="24dp"
+    	    android:contentDescription="@string/logokwf"
+    	    android:src="@drawable/logokwf" />
+
+    	<TextView
+    	    android:id="@+id/tvGameOver"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/ivBestLogo"
+    	    android:layout_alignLeft="@+id/tvTotalScoreStatic"
+    	    android:layout_marginBottom="39dp"
+    	    android:text="@string/gameOver"
+    	    android:textColor="@android:color/white"
+    	    android:textSize="30sp"
+    	    android:textStyle="bold" />
+
+</RelativeLayout>

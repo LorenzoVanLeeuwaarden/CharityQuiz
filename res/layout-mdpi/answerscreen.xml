@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgr"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".GameOver" >
+    
+    <ImageView
+        android:id="@+id/ivSoundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:contentDescription="@string/soundButton"
+        android:src="@drawable/soundon" />
+
+    <ImageView
+        android:id="@+id/ivHeart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/heart"
+        android:src="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/ivHeart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/heart"
+        android:src="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/ivHeart3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/heart"
+        android:src="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/tvCurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/currentScore"
+        android:textColor="@android:color/white" />
+    
+    	<TextView
+    	    android:id="@+id/tvGoodWrong"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerHorizontal="true"
+    	    
+    	    android:layout_below="@+id/ivHeart3"
+    	    android:layout_marginTop="47dp"
+    	    android:text="@string/good"
+    	    android:textColor="@android:color/white"
+    	    android:textSize="25sp"
+    	    android:textStyle="bold" />
+
+    	<ImageView
+    	    android:id="@+id/ivResultLogo"
+    	    android:layout_width="200dp"
+    	    android:layout_height="100dp"
+    	    android:layout_below="@+id/tvGoodWrong"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginTop="15dp"
+    	    android:contentDescription="@string/logokwf"
+    	    android:src="@drawable/logokwf" />
+
+    	<TextView
+    	    android:id="@+id/tvExplanation"
+    	    android:layout_width="280dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@+id/ivResultLogo"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginTop="42dp"
+    	    android:text="@string/exampleExplanation"
+    	    android:textColor="@android:color/white"
+    	    android:textSize="16sp" />
+
+    	<ImageView
+    	    android:id="@+id/ivFBShare"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="35dp"
+    	    android:layout_alignLeft="@+id/ivResultLogo"
+    	    android:layout_alignParentBottom="true"
+    	    
+    	    android:contentDescription="@string/fbShare"
+    	    android:src="@drawable/facebookshare" 
+    	    android:clickable="true"/>
+
+    	<Button
+    	    android:id="@+id/bNextLevel"
+    	    android:layout_width="135dp"
+    	    android:layout_height="35dp"
+    	    android:layout_alignTop="@+id/ivFBShare"
+    	    android:layout_toRightOf="@+id/tvCurrentScore"
+    	    android:background="@drawable/menu_button"
+    	    android:padding="5dp"
+    	    android:text="@string/nextLevel"
+    	    android:textColor="@android:color/white"
+    	    android:textSize="16sp" />
+    
+</RelativeLayout>

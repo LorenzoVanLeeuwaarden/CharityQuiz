@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/goededoelenquiz"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rlMainButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <Button
+            android:id="@+id/bHighscore"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:background="@drawable/button_menu"
+            android:text="@string/highscorebutton"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bStartbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@id/bHighscore"
+            android:layout_marginBottom="75dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_menu"
+            android:text="@string/startbutton"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvgametitle"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:layout_above="@id/bStartbutton"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/gametitle"
+            android:textColor="@color/white"
+            android:textSize="75sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
